@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import HomeNavbar from '../components/HomeNavbar'
+import HomeNavbar from '../components/Navbars/HomeNavbar'
 import Aboutme from './Aboutme'
 import Projects from './Projects'
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
-import CustomNavbar from '../components/HomeNavbar'
+import CustomNavbar from '../components/Navbars/HomeNavbar'
 
 function Aboutme() {
   return (

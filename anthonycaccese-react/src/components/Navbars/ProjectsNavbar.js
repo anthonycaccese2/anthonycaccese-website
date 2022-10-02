@@ -1,3 +1,6 @@
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NavLink, Stack } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -35,12 +38,12 @@ function ProjectsNavbar() {
 
               </Stack>
             </NavDropdown> */}
-          </Nav>
+          </Nav> 
+          <Container>
+          </Container>
           <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
-            </Nav.Link>
+            <Nav.Link href="#memes"><FontAwesomeIcon icon={faEnvelope}/></Nav.Link>
+            <Nav.Link href="https://www.linkedin.com/in/anthony-caccese-88078b218/"><FontAwesomeIcon icon={faLinkedin}/></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
