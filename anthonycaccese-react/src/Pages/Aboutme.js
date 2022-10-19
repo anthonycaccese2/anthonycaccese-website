@@ -7,7 +7,7 @@ function Aboutme() {
     <div className="App">
         <div className="App-header" id='about'>
             <h1>About Anthony</h1>
-            <p>Here's a little about tony</p>
+            <p>I'm a Computer Science Major at the University of Maine.</p>
         </div>
     </div>
   )

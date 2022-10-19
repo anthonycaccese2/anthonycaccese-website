@@ -10,8 +10,11 @@ function Home() {
     <div className="App">
         <HomeNavbar></HomeNavbar>
         <header className="App-header" id="home">
+            <h1>
+                Currently Under Construction
+            </h1>
             <p>
-                Edit <code>src/App.js</code> and save to reload.
+              This website was built in react
             </p>
         </header>
         <Aboutme></Aboutme>
