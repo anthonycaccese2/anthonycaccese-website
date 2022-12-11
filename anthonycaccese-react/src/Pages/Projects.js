@@ -53,15 +53,15 @@ function Projects() {
                     value={radio.value}
                     checked={radioValue === radio.value}
                     onChange={(e) => setRadioValue(e.currentTarget.value)}
-                    color = "#38B6FF"
+                    color = "#545454"
                     // style={{background:"#38B6FF", borderColor: "#38B6FF", pas color:"white"}}
                 >
                     {radio.name}
                 </ToggleButton>
                 ))}
         </ButtonGroup>
-
-        <Container className='App-projects'>
+                    
+        <Stack className='App-projects' direction='verticle' gap={3}>
             {data.map((results) => {
                 // console.log("In put data ",data);
                 if (results[0] == radios[radioValue-1].name){
@@ -72,7 +72,7 @@ function Projects() {
                     console.log("Didnt work: ", results[0], radios[radioValue-1].name);
                 }
             })}
-        </Container>
+        </Stack>
     </div>
   )
 }
