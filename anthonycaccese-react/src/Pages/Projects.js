@@ -16,17 +16,17 @@ function Projects() {
         { name: 'School', value: '2' },
         { name: 'Swipe Pitch', value: '3' },
         { name: 'Personal', value: '4' },
-      ];
-    useEffect( () => {
+    ];
+    useEffect(() => {
         (async () => {
             parseFile();
         })();
     }, []);
-    
+
     const parseFile = () => {
         readString(csvFile, papaConfig);
     }
-      const papaConfig = {
+    const papaConfig = {
         complete: (results, file) => {
             console.log('Parsing complete:', results, file);
             // data = results.data;
@@ -37,44 +37,44 @@ function Projects() {
             console.log('Error while parsing:', error, file);
         },
     };
-      
-  return (
-    <div className='App' style={{background:"#545454", color:"white"}}>
-        <ProjectsNavbar></ProjectsNavbar>
-        
-        <ButtonGroup style={{width:"100%", backgroundColor: "#00B1E1" }}>
+
+    return (
+        <div className='App' id='projects' style={{ background: "#545454", color: "white" }}>
+            {/* <ProjectsNavbar></ProjectsNavbar> */}
+
+            <ButtonGroup style={{ width: "100%" }}>
                 {radios.map((radio, idx) => (
-                <ToggleButton
-                    variant="primary"
-                    key={idx}
-                    id={`radio-${idx}`}
-                    type="radio"
-                    name="radio"
-                    value={radio.value}
-                    checked={radioValue === radio.value}
-                    onChange={(e) => setRadioValue(e.currentTarget.value)}
-                    color = "#545454"
+                    <ToggleButton
+                        variant="primary"
+                        key={idx}
+                        id={`radio-${idx}`}
+                        type="radio"
+                        name="radio"
+                        value={radio.value}
+                        checked={radioValue === radio.value}
+                        onChange={(e) => setRadioValue(e.currentTarget.value)}
+                        color="#545454"
                     // style={{background:"#38B6FF", borderColor: "#38B6FF", pas color:"white"}}
-                >
-                    {radio.name}
-                </ToggleButton>
+                    >
+                        {radio.name}
+                    </ToggleButton>
                 ))}
-        </ButtonGroup>
-                    
-        <Stack className='App-projects' direction='verticle' gap={3}>
-            {data.map((results) => {
-                // console.log("In put data ",data);
-                if (results[0] == radios[radioValue-1].name){
-                    return (
-                        <ProjectCards image={results[1]} projectName={results[2]} when={results[3]} description={results[4]}/>
-                    )
-                } else {
-                    console.log("Didnt work: ", results[0], radios[radioValue-1].name);
-                }
-            })}
-        </Stack>
-    </div>
-  )
+            </ButtonGroup>
+
+            <Stack className='App-projects' direction='verticle' gap={3}>
+                {data.map((results) => {
+                    // console.log("In put data ",data);
+                    if (results[0] == radios[radioValue - 1].name) {
+                        return (
+                            <ProjectCards image={results[1]} projectName={results[2]} when={results[3]} description={results[4]} />
+                        )
+                    } else {
+                        console.log("Didnt work: ", results[0], radios[radioValue - 1].name);
+                    }
+                })}
+            </Stack>
+        </div>
+    )
 }
 
 export default Projects

@@ -3,18 +3,18 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home';
-import Projects from './Pages/Projects';
 import Aboutme from './Pages/Aboutme';
+import ProjectPage from './components/ProjectPage';
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/projects/*" element={<Projects />}/>
-        <Route path="/aboutme" element={<Aboutme />}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects/*" element={<ProjectPage />} />
+        <Route path="/aboutme" element={<Aboutme />} />
       </Routes>
     </BrowserRouter>
-     
+
   );
 }
 
