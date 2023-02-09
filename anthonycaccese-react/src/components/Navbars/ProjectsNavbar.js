@@ -11,8 +11,8 @@ import { Link } from 'react-router-dom';
 function ProjectsNavbar() {
   return (
     <Navbar collapseOnSelect expand="lg" variant="dark">
-       <style>
-            {`
+      <style>
+        {`
         .navbar {
           background-color: #2D2C2C;
         }
@@ -28,7 +28,8 @@ function ProjectsNavbar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href='/projects'>Projects</Nav.Link>
+            <Nav.Link href='/#about'>About Anthony</Nav.Link>
+            <Nav.Link href='/#projects'>Projects</Nav.Link>
             {/* <NavDropdown title="Projects" id="collasible-nav-dropdown">
               <Stack>
                 <Link to='/projects/vemi'>VEMI</Link>
@@ -38,12 +39,10 @@ function ProjectsNavbar() {
 
               </Stack>
             </NavDropdown> */}
-          </Nav> 
-          <Container>
-          </Container>
+          </Nav>
           <Nav>
-            <Nav.Link href="#memes"><FontAwesomeIcon icon={faEnvelope}/></Nav.Link>
-            <Nav.Link href="https://www.linkedin.com/in/anthony-caccese-88078b218/"><FontAwesomeIcon icon={faLinkedin}/></Nav.Link>
+            <Nav.Link href="#memes"><FontAwesomeIcon icon={faEnvelope} /></Nav.Link>
+            <Nav.Link href="https://www.linkedin.com/in/anthony-caccese-88078b218/"><FontAwesomeIcon icon={faLinkedin} /></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

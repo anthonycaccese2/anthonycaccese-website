@@ -6,6 +6,7 @@ import ToggleButton from 'react-bootstrap/ToggleButton';
 import csvFile from '../data/projects/projects.csv';
 import { readString } from 'react-papaparse';
 import ProjectCards from '../components/ProjectCards';
+import HomeNavbar from '../components/Navbars/HomeNavbar';
 
 function Projects() {
     const [radioValue, setRadioValue] = useState('1');
@@ -42,10 +43,10 @@ function Projects() {
         <div className='App' id='projects' style={{ background: "#545454", color: "white" }}>
             {/* <ProjectsNavbar></ProjectsNavbar> */}
 
-            <ButtonGroup style={{ width: "100%" }}>
+            <ButtonGroup style={{ width: "80%" }}>
                 {radios.map((radio, idx) => (
                     <ToggleButton
-                        variant="primary"
+                        variant="secondary"
                         key={idx}
                         id={`radio-${idx}`}
                         type="radio"
