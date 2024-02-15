@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/anthonycaccese-website/static/css/main.a2e2e780.css",
-    "main.js": "/anthonycaccese-website/static/js/main.bf3eac64.js",
-    "static/js/453.448013d6.chunk.js": "/anthonycaccese-website/static/js/453.448013d6.chunk.js",
-    "static/media/logo.svg": "/anthonycaccese-website/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "static/media/projects.csv": "/anthonycaccese-website/static/media/projects.4f477a2b6794703e87c7.csv",
-    "index.html": "/anthonycaccese-website/index.html",
-    "main.a2e2e780.css.map": "/anthonycaccese-website/static/css/main.a2e2e780.css.map",
-    "main.bf3eac64.js.map": "/anthonycaccese-website/static/js/main.bf3eac64.js.map",
-    "453.448013d6.chunk.js.map": "/anthonycaccese-website/static/js/453.448013d6.chunk.js.map"
+    "main.css": "/anthonycaccese/static/css/main.a2e2e780.css",
+    "main.js": "/anthonycaccese/static/js/main.1cfbd26c.js",
+    "static/js/453.448013d6.chunk.js": "/anthonycaccese/static/js/453.448013d6.chunk.js",
+    "static/media/logo.svg": "/anthonycaccese/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/projects.csv": "/anthonycaccese/static/media/projects.4f477a2b6794703e87c7.csv",
+    "index.html": "/anthonycaccese/index.html",
+    "main.a2e2e780.css.map": "/anthonycaccese/static/css/main.a2e2e780.css.map",
+    "main.1cfbd26c.js.map": "/anthonycaccese/static/js/main.1cfbd26c.js.map",
+    "453.448013d6.chunk.js.map": "/anthonycaccese/static/js/453.448013d6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a2e2e780.css",
-    "static/js/main.bf3eac64.js"
+    "static/js/main.1cfbd26c.js"
   ]
 }
